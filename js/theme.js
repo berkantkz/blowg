@@ -40,7 +40,7 @@ $(function() {
         secilen_soz = sozler[Math.floor(Math.random() * sozler.length)];
 		
 	
-		document.getElementById("soz").innerHTML = secilen_soz;
+		document.getElementById("soz").innerHTML = "''" + secilen_soz + "''";
 		
 });
 
