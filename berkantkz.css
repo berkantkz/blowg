@@ -5,14 +5,14 @@ body {
 
 .bg {
 	padding: 5% 0px 2% 8%;
-    margin: -2% 0 0 -3%;
+    margin: -2% 0 0 -5%;
     height: 100%;
     width: 100%;
     position: fixed;
     background: url(classic-photo.jpg);
     background-size: cover;
     background-position-y: center;
-    filter: blur(15px);
+    filter: blur(10px);
 }
 
 .cover {
