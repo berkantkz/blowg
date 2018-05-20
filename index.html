@@ -8,14 +8,29 @@
 	
 	<link href="berkantkz.css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet">
+	
+	<style>
+		#particles-js canvas {
+			position: fixed !important;
+		}
+	</style>
 
 </head>
 <body>
-	<div class="bg"></div>
+	<script src="particles.js"></script>
+	<div class="bg" id="bg"></div>	
+	<div id="particles-js"></div>
 	<div class="main">
 		<div class="cover">
 			<img src="kz_t.png" width="192px" height="192px"></img>
 			<p>berkantkz</p>
 		</div>
 	</div>
+	
+	<script>
+		/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+		particlesJS.load('particles-js', 'particlesjs-config.json', function() {
+			console.log('callback - particles.js config loaded');
+		});
+	</script>
 <body>
