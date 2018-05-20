@@ -11,7 +11,7 @@ body {
     position: fixed;
     background: url(classic-photo.jpg);
     background-size: cover;
-    background-position-y: center;
+    background-position: center;
     filter: blur(10px);
 }
 
