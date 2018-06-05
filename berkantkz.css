@@ -12,7 +12,7 @@ body {
     background: url(classic-photo.jpg);
     background-size: cover;
     background-position: center;
-    filter: blur(10px);
+    filter: blur(8px);
 }
 
 .cover {
@@ -33,6 +33,7 @@ body {
     right: 0;
     border: 9px double #ffffff4a;
     box-shadow: 0 0 10vh #2b2b2b5e;
+	background: #88797926;
 }
 
 .main p {
