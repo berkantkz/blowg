@@ -1,0 +1,45 @@
+{% assign postCount = site.posts | size %}
+{% unless postCount == 0 %}
+
+<div class="widget widget-recent-posts">
+    <h3 class="widget-title">Son gönderiler</h3>
+    <ul>
+        {% for post in site.posts | limit: 2 %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endunless %}
+<!--
+<div class="widget widget-archives">
+    <h3 class="widget-title">Archives</h3>
+    <ul>
+        <li>
+            <a href="#">November 2014</a>
+        </li>
+        <li>
+            <a href="#">September 2014</a>
+        </li>
+        <li>
+            <a href="#">January 2013</a>
+        </li>
+    </ul>
+</div>
+
+<div class="widget widget-category">
+    <h3 class="widget-title">Category</h3>
+    <ul>
+        <li>
+            <a href="#">Web Design</a>
+        </li>
+        <li>
+            <a href="#">Web Development</a>
+        </li>
+        <li>
+            <a href="#">SEO</a>
+        </li>
+    </ul>
+</div> -->
