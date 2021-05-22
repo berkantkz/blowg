@@ -17,9 +17,7 @@ layout: index
         </h1>
         <div class="entry-meta">
             <span class="post-date"><a><time class="entry-date" datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date_to_long_string}}</time></a></span>
-            <span class="post-category"><a href="#">Web Design</a></span>
-            <!-- <span class="post-author"><a href="#">Albert Einstein</a></span> -->
-            <!-- <span class="comments-link"><a href="#">4 Comments</a></span> -->
+            {% for category in post.category %}<span class="post-category"><a>{{category}}</a></span>{% endfor %}
         </div>
     </header>
     <div class="entry-content clearfix">
