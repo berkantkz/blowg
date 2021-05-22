@@ -16,12 +16,13 @@ layout: index
             <a href="{{ post.url }}" data="{{ post.language }}">{{ post.title }}</a>
         </h1>
         <div class="entry-meta">
-            <span class="post-date"><a><time class="entry-date" datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date_to_long_string}}</time></a></span>
+            <span class="post-date"><a><time class="entry-date"
+                        datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date_to_long_string}}</time></a></span>
             {% for category in post.category %}<span class="post-category"><a>{{category}}</a></span>{% endfor %}
         </div>
     </header>
     <div class="entry-content clearfix">
-        <p>{{ post.content }}</p>
+        <p>{{ post.content | truncatewords: 23, "--" }}</p>
         <!-- <div class="read-more">
             <a href="{{ post.url }}" class="more-link">Continue reading <span class="meta-nav">→</span></a>
         </div> -->
