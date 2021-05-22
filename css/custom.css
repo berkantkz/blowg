@@ -150,12 +150,6 @@ figure {
  * 3.2 - Main Navigation
  */
 
-.main-nav {
-	/*
-	margin-top: 11px;
-	max-width: 95%;*/
-}
-
 .main-nav a {
 	color: #000000 !important;
 	padding: 0 0 5px 0 !important;
@@ -626,12 +620,6 @@ figure {
 	transition: opacity 0.5s;
 }
 
-.overlay-hugeinc nav {
-	/*
-	-webkit-perspective: 1200px;
-	perspective: 1200px; */
-}
-
 .overlay-hugeinc nav ul {
 	opacity: 0.4;
 	transform: opacity 0.5s;
@@ -804,25 +792,9 @@ figure {
 	.main-nav a {
 		margin-right: 0;
 	}
-
-	#header-search-box {
-		/*
-		position: absolute;
-		right: 20px;*/
-	}
 }
 
 @media (max-width: 767px) {
-	#header-search-box {
-		/*
-		right: 20px;
-		top: 9px;*/
-	}
-
-	.main-nav {
-		/*
-		margin-top: 2px;*/
-	}
 
 	.btn-5 span {
 		display: none;
