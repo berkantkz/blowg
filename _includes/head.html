@@ -2,27 +2,27 @@
 
 
 <!-- meta -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 {% if page.layout == "post" %}
-<meta name="description" content="{{ page.content | strip_html | truncatewords: 11, ' ...' }}">
+<meta name="description" content="{{ page.content | strip_html | truncatewords: 11, ' ...' }}"/>
 {% elsif page.layout == "index" %}
-<meta name="description" content="ben ve arada yazdığım birkaç şey">
+<meta name="description" content="ben ve arada yazdığım birkaç şey"/>
 {% endif %}
-<meta name="keywords" content="berkantkz, berkant, lorde help me">
+<meta name="keywords" content="berkantkz, berkant, lorde help me"/>
 <meta name="author" content="berkantkz">
 
 <!--- og -->
-<meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}berkantkz">
+<meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}berkantkz"/>
 {% if page.layout == "post" %}
-<meta property="og:description" name="description" content="{{ page.content | strip_html | truncatewords: 11, ' ...' }}">
+<meta property="og:description" name="description" content="{{ page.content | strip_html | truncatewords: 11, ' ...' }}"/>
 {% elsif page.layout == "index" %}
-<meta property="og:description" name="description" content="ben ve arada yazdığım birkaç şey">
+<meta property="og:description" name="description" content="ben ve arada yazdığım birkaç şey"/>
 {% endif %}
-<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
 
 <!-- link -->
-<link rel="icon" href="/kz.png" type="image/gif" sizes="16x16 32x32">
+<link rel="icon" href="/kz.png" type="image/gif" sizes="16x16 32x32"/>
 
 <!-- css -->
 <link rel="stylesheet" href="/css/bootstrap.min.css">
