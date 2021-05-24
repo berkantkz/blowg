@@ -19,8 +19,9 @@
 					<article class="post">
 						<header class="entry-header">
 							{% if page.song %}
-							<iframe src="{{ page.song }}" width="300" height="80" frameborder="0"
-								allowtransparency="true" allow="encrypted-media" style="float: right;"></iframe>
+							<iframe src="https://open.spotify.com/embed/track/{{ page.song }}" width="300" height="80"
+								frameborder="0" allowtransparency="true" allow="encrypted-media"
+								style="float: right;"></iframe>
 							{% endif %}
 							<h1 class="entry-title">{{ page.title }}</h1>
 							<div class="entry-meta">
