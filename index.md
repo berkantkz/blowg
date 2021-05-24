@@ -22,7 +22,7 @@ layout: index
         </div>
     </header>
     <div class="entry-content clearfix">
-        <p>{{ post.content | truncatewords: 23, "--" }}</p>
+        <p>{{ post.content | strip_html | truncatewords:23, " ..." }}</p>
         <!-- <div class="read-more">
             <a href="{{ post.url }}" class="more-link">Continue reading <span class="meta-nav">→</span></a>
         </div> -->
