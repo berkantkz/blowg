@@ -258,6 +258,7 @@ figure {
 .entry-meta span:not(:last-child):after {
 	content: " • ";
 	padding-left: 5px;
+	color: "#000"
 }
 
 .entry-content {
