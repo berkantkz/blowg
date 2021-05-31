@@ -31,12 +31,12 @@
 								<span class="post-date" style="color: #000">düzenleme: <a><time class="entry-date"
 											datetime="{{ page.editdate | date_to_xmlschema }}">{{ page.editdate | %x }}</time></a></span>
 								{% endif %}
-								{% if page.categories %}
+								{% if page.category %}
+								{% for category in page.category %}
 								<span class="post-category">
-									{% for category in page.categories %}
 									<a href="#">{{ category }}</a>
-									{% endfor %}
 								</span>
+								{% endfor %}
 								{% endif %}
 								<!-- <span class="post-author"><a href="#">Albert Einstein</a></span> 
 
