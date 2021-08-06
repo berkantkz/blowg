@@ -8,7 +8,7 @@ date: 16.05.2021
 
 adım berkant. orta yaşlarda, çoğu eve tıkılıp kalmış insan gibi bilgisayar başında zaman geçiren, fırsat oldukça arkadaşlarla (2 tane) dışarı (sahile -- neyseki sahil kenarında yaşıyorum yoksa bu şehir çekilmezdi) çıkmayı seven mütercim tercümanlık öğrencisiyim.
 
-gökyüzünün ender ortaya çıkan renklere bürünmüş halini (genellikle pembe ama bazen turuncu da fena değil) severim. gezmeyi de severim ama o anda üşenmiyorsam gezerim. az bi' şey yazılım (giriş seviyesi java js css html vb. -- bu blogu hazırlayabilecek kadar falan işte) vs. bilirim. teknik konulara ilgim vardır. sobanın bile çalışma mantığını incelemeyi severim. olaylara mantık çerçevesinde yaklaşmayı severim. ```türk sanat müziği``` severim. genellikle aklıma gelen bi' tsm şarkısından spotify radyosu başlatıp dinliyorum. onun yanı sıra lorde hayranıyım, çok severim. hayatı da tam olarak lorde'un dediği gibi _this dream isn't feeling sweet_ diyerek yorumluyorum.
+gökyüzünün ender ortaya çıkan renklere bürünmüş halini (genellikle pembe ama bazen turuncu da fena değil) severim. gezmeyi de severim ama o anda üşenmiyorsam gezerim. az bi' şey yazılım (giriş seviyesi java js css html vb. -- bu blogu hazırlayabilecek kadar falan işte) vs. bilirim. teknik konulara ilgim vardır. sobanın bile çalışma mantığını incelemeyi severim. olaylara mantık çerçevesinde yaklaşmayı severim. genellikle çalma listelerimi ya da aklıma gelen bi' şarkının spotify radyosunu başlatıp dinlerim. onun yanı sıra lorde hayranıyım, çok severim. hayatı da tam olarak lorde'un dediği gibi _this dream isn't feeling sweet_ diyerek yorumluyorum.
 
 ulaşım:
 
