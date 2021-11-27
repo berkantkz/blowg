@@ -226,6 +226,15 @@ figure {
 	border-bottom: 1px solid lightgray;
 }
 
+header.entry-header {
+	display: flex;
+	align-items: center;
+}
+
+header.entry-header > * {
+	flex: 1 1 auto;
+}
+
 .entry-title {
 	font-size: 1.9em;
 	line-height: 1.6;
