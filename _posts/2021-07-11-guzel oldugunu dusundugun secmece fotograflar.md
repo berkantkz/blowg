@@ -3,6 +3,7 @@ title: çektiğim fotoğraflardan hoşuma giden bazıları
 layout: post
 category: ["fotoğrafçılık"]
 song: 20lmsJplVohdjGaHUTRpKt
+published: false
 ---
 
 <style>
