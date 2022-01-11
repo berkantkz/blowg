@@ -878,3 +878,7 @@ ul.nav.navbar-nav.navbar-right li:not(:last-child) {
 code {
 	color: var(--accent);
 }
+
+td:not(:first-child), th:not(:first-child) {
+    padding: 15px;
+}
