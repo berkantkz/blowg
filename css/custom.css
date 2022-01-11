@@ -879,6 +879,7 @@ code {
 	color: var(--accent);
 }
 
-td:not(:first-child), th:not(:first-child) {
-    padding: 15px;
+th, td {
+    border: 1px solid #0004;
+    padding: 10px;
 }
