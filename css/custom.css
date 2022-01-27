@@ -868,6 +868,7 @@ ul.nav.navbar-nav.navbar-right li:not(:last-child) {
 
 .postpage .entry-title {
 	font-size: 2.5em;
+    color: #282828;
 }
 
 .postpage .entry-content {
