@@ -220,7 +220,7 @@ figure {
 
 #single .post {
 	background: #fff;
-	padding: 35px 0 35px 0;
+	border-bottom: 1px solid #e7e7e7;
 }
 
 .body .post:not(:last-child) {
