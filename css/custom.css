@@ -85,6 +85,7 @@ p {
     font-size: 16px;
     line-height: 1.5em;
 	text-align: justify;
+	margin: 0 !important;
 }
 
 #single p,
