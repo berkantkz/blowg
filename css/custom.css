@@ -474,7 +474,7 @@ header.entry-header > * {
 .copyright {
 	font-size: 1.2em;
 	text-align: center;
-	padding-top: 1em;
+	padding: 4em;
 	margin: 0;
 	border-top: 1px solid #eee;
 	color: #666;
