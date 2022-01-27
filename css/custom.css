@@ -234,6 +234,7 @@ header.entry-header {
 
 header.entry-header > * {
 	flex: 1 1 auto;
+	width: 100%;
 }
 
 .entry-title {
