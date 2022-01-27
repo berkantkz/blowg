@@ -802,6 +802,12 @@ header.entry-header > * {
 	.main-nav a {
 		margin-right: 0;
 	}
+
+	header.entry-header {
+		flex-direction: column;
+    	align-items: start;
+	}
+
 }
 
 @media (max-width: 767px) {
