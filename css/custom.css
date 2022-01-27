@@ -46,6 +46,14 @@ Text Domain: blackandwhite
 	outline: none;
 }
 
+html.dark-mode {
+	filter: invert(100%);
+}
+
+html.dark-mode img {
+	/* filter: invert(100%); */
+}
+
 h1,
 h2,
 h3,
