@@ -214,7 +214,6 @@ figure {
  */
 
 .content-body {
-	padding-bottom: 4em;
 	min-height: calc(100vh - 230px);
 }
 
