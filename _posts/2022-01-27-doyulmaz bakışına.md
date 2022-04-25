@@ -3,6 +3,7 @@ title: doyulmaz bakışına
 layout: post
 category: 
 song: 34Fgif6j6uQWKRtyNUKltk?si=81e1909f912b4a3e
+published: false
 ---
 
 eski sanatçılardan ```berkant```'ın bu şarkısını adından dolayı melisa'm çalma listemize ekleyerek bana armağan etmişti. onun bakışına da asla doyulmaz.
