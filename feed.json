@@ -1,0 +1,16 @@
+---
+layout: null
+permalink: /feed.json
+---
+[
+    {% for post in site.posts %}{
+        "posted": {{ post.telegramPost | jsonify }},
+        "url": "https://berkantkz.github.io{{ post.url }}",
+        "name": {{ post.title | jsonify }},
+        "date": {{ post.date | date: "%d/%m/%Y" | jsonify }},
+        "categories" : [{% for category in post.category %}{{ category | jsonify }}{% if forloop.last == false %},{% endif %}{% endfor %}],
+        "song" : {{ post.song | jsonify}},
+        "content": {{ post.content | strip_html | jsonify }}
+    }{% if forloop.last == false %},
+    {% endif %}{% endfor %}
+]
