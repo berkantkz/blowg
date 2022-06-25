@@ -25,7 +25,7 @@
 												datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time></a></span>
 									{% if page.editdate %}
 									<span class="post-date" style="color: #000">düzenleme: <a><time class="entry-date"
-												datetime="{{ page.editdate | date_to_xmlschema }}">{{ page.editdate | %x }}</time></a></span>
+												datetime="{{ page.editdate | date_to_xmlschema }}">{{ page.editdate }}</time></a></span>
 									{% endif %}
 									{% if page.category %}
 									{% for category in page.category %}
