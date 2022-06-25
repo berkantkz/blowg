@@ -13,3 +13,4 @@ jobs:
     steps:
     - name: publish post on telegram
       run: python tg_bot.py
+      working-directory: /
