@@ -19,7 +19,7 @@ post = requests.get(feed).json()
 
 message = ''
 
-if post[0]['posted'] == None :
+if post[0]['posted'] == True :
     print("posting to telegram")
     message += '\n[' + post[0]['name'] + '](' + post[0]['url'] + ') - '
     message += '__' + post[0]['date'] + '\n__'
