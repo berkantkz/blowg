@@ -4,7 +4,7 @@ permalink: /feed.json
 ---
 [
     {% for post in site.posts %}{
-        "posted": {{ post.telegramPost | jsonify }},
+        "posted": {{ post.posted | jsonify }},
         "url": "https://berkantkz.github.io{{ post.url }}",
         "name": {{ post.title | jsonify }},
         "date": {{ post.date | date: "%d/%m/%Y" | jsonify }},
