@@ -13,7 +13,7 @@ import os
 feed = "https://berkantkz.github.io/feed.json"
 spotify = "https://open.spotify.com/track/"
 
-berkantkzBot = os.environ('BERKANTKZBOT')
+berkantkzBot = os.environ.get('BERKANTKZBOT')
 
 post = requests.get(feed).json()
 
