@@ -25,4 +25,4 @@ jobs:
       - name: send message to telegram channel
         run: python tg_bot.py
         env:
-          REPO_SECRET: ${{ secrets.BERKANTKZBOT }} 
+          BERKANTKZBOT: ${{ secrets.BERKANTKZBOT }} 
