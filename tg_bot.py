@@ -29,6 +29,6 @@ if post[0]['posted'] == True :
     message += post[0]['content']
     print(message)
     url = "https://api.telegram.org/bot" + str(berkantkzBot) + "/sendMessage?chat_id=@u_berkantkz&parse_mode=markdown&text=" + str(message)
-    requests.post(url)
+    print(requests.post(url))
 else:
     print("nothing to post")
