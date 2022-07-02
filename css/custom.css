@@ -46,12 +46,19 @@ Text Domain: blackandwhite
 	outline: none;
 }
 
-html.dark-mode {
-	filter: invert(100%);
+.dark-mode body, .dark-mode div, .dark-mode main, .dark-mode header, .dark-mode footer, .dark-mode article, .dark-mode p, .dark-mode a, .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6  {
+    background-color: #1e1e1e !important;
+    color: #ffe9fc !important;
 }
 
-html.dark-mode img {
-	/* filter: invert(100%); */
+.dark-mode .widget-recent-posts ul li::before {
+    color: #ffe9fc;
+}
+
+
+
+.dark-mode .nav .cl-effect-11 img {
+    filter: invert(1);
 }
 
 h1,
