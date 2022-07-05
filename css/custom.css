@@ -49,16 +49,45 @@ Text Domain: blackandwhite
 .dark-mode body, .dark-mode div, .dark-mode main, .dark-mode header, .dark-mode footer, .dark-mode article, .dark-mode p, .dark-mode a, .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6  {
     background-color: #1e1e1e !important;
     color: #ffe9fc !important;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.dark-mode a:hover {
+	color: var(--accent) !important;
 }
 
 .dark-mode .widget-recent-posts ul li::before {
     color: #ffe9fc;
 }
 
-
-
 .dark-mode .nav .cl-effect-11 img {
     filter: invert(1);
+	background: 0 !important;
+}
+
+.dark-mode ul img {
+    background: white;
+    border-radius: 50%;
+}
+
+.dark-mode code {
+	background-color: #404040 !important;
+	transition: all .2s;
+}
+
+.dark-mode a code:hover {
+	background-color: var(--accent) !important;
+    color: #404040;
+    text-shadow: 0 0 black;
+}
+
+.dark-mode code::selection {
+	color: #404040;
+}
+
+.dark-mode td {
+    border: 1px solid #fff4;
 }
 
 h1,
@@ -267,7 +296,6 @@ header.entry-header > * {
 }
 
 .entry-meta {
-	color: #DDDDDD;
 	font-size: 13px;
 	letter-spacing: 1px;
 	margin-bottom: 15px;
@@ -895,7 +923,7 @@ ul.nav.navbar-nav.navbar-right li:not(:last-child) {
 }
 
 :root{
-	--accent: #ce0abf;
+	--accent: #f06292;
 }
 
 code {

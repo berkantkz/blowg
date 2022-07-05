@@ -1,3 +1,7 @@
+if (getCookie('dark-mode') != null && getCookie('dark-mode') == 'true') {
+  $('html').addClass('dark-mode');
+}
+
 var searchvisible = 0;
 
 $("#search-menu").click(function(e){ 
@@ -147,6 +151,44 @@ if ( typeof define === 'function' && define.amd ) {
         }
     }
 
-    triggerBttn.addEventListener( 'click', toggleOverlay );
+    //triggerBttn.addEventListener( 'click', toggleOverlay );
     closeBttn.addEventListener( 'click', toggleOverlay );
 })();
+
+// Set cookie and get cookie with JavaScript [duplicate]
+// https://stackoverflow.com/a/24103596
+
+function setCookie(name,value,days) {
+  var expires = "";
+  if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days*24*60*60*1000));
+      expires = "; expires=" + date.toUTCString();
+  }
+  document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
+function getCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+  }
+  return null;
+}
+function eraseCookie(name) {   
+  document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
+
+function darkMode() {
+  if (getCookie('dark-mode') == '' | getCookie('dark-mode') == null | getCookie('dark-mode') == 'false') {
+    setCookie('dark-mode', true, 7)
+    $('html').addClass('dark-mode')
+    console.log('dark mode was enabled.')
+  } else {
+    setCookie('dark-mode', false, 7)
+    $('html').removeClass('dark-mode')
+    console.log('dark mode was disabled.')
+  }
+}
