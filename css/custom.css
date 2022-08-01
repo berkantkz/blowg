@@ -90,6 +90,11 @@ Text Domain: blackandwhite
     border: 1px solid #fff4;
 }
 
+.dark-mode input {
+	background: #383838;
+    border: 0;
+}
+
 .glow:hover {
 	color: inherit;
 	text-shadow: 0 0 1px var(--accent), 0 0 2px var(--accent), 0 0 26px var(--accent), 0 0 15px var(--accent);
