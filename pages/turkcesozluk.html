@@ -1,0 +1,61 @@
+---
+title: Türkçe Sözlük
+permalink: /sozluk/
+layout: index
+language: tr
+date: 01.08.2022
+---
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script>
+        var searchUri = "https://sozluk.gov.tr/gts?ara=";
+
+        function search(t) {
+            $.getJSON(searchUri + t, (data) => {
+                console.log(t);
+                console.log(data.error);
+                if (!data.error) {
+                    var content = '';
+                    // content += data[0].anlamlarListe[0].anlam;
+                    console.log(data);
+                    content += "Dil: <i>" + (data[0].lisan != "" ? data[0].lisan.split(" ")[0] : String("Türkçe")) + "</i>";
+                    content += "<br>"
+
+                    content += "<ol>Anlamlar:"
+                    for (var i = 0; i < data[0].anlamlarListe.length; i++) {
+                        if (typeof data[0].anlamlarListe[i].ozelliklerListe !== "undefined") {
+                            for (var o = 0; o < data[0].anlamlarListe[i].ozelliklerListe.length; o++) {
+                                content += "<li>(<i>" + data[0].anlamlarListe[i].ozelliklerListe[0].tam_adi + "</i>) " + data[0].anlamlarListe[i].anlam + "</li>";
+                                if (typeof data[0].anlamlarListe[i].orneklerListe !== "undefined") {
+                                    for (var r = 0; r < data[0].anlamlarListe[i].orneklerListe.length; r++) {
+                                        content += "Örnek kullanımlar<br>";
+                                        content += data[0].anlamlarListe[i].orneklerListe[r].ornek;
+                                        if (typeof data[0].anlamlarListe[i].orneklerListe[r].yazar !== "undefined") {
+                                            content += "<br>— " + data[0].anlamlarListe[i].orneklerListe[r].yazar[0].tam_adi;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    content += "</ol><br><ol>Atasözleri ve deyimler:"
+                    if (typeof data[0].atasozu !== "undefined") {
+                        for (a = 0; a < data[0].atasozu.length; a++) {
+                            content += "<li>" + data[0].atasozu[a].madde
+                        }
+                    } else {
+                        content += " atasözü veya deyim yok."
+                    }
+                    content += "</ol><br>";
+
+                    content += "<ol>Birleşikler: "
+                    content += (data[0].birlesikler !== null ? data[0].birlesikler : "birleşik kullanım yok.");
+
+                    $('#content').html(content);
+                } else {
+                    $('#content').html("<i>sonuç yok</i>");
+                }
+            });
+        }
+    </script>
+    <input type="search" name="search" id="search" oninput="search($(this).val())">
+    <div id="content"></div>
