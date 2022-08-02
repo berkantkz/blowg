@@ -11,13 +11,12 @@ date: 01.08.2022
 
         function search(t) {
             $.getJSON(searchUri + t, (data) => {
-                console.log(t);
-                console.log(data.error);
                 if (!data.error) {
                     var content = '';
                     // content += data[0].anlamlarListe[0].anlam;
                     console.log(data);
-                    content += "Dil: <i>" + (data[0].lisan != "" ? data[0].lisan.split(" ")[0] : String("Türkçe")) + "</i>";
+                    content += data[0].madde;
+                    content += "<br>Dil: <i>" + (data[0].lisan != "" ? data[0].lisan.split(" ")[0] : String("Türkçe")) + "</i>";
                     content += "<br>"
 
                     content += "<ol>Anlamlar:"
@@ -48,7 +47,7 @@ date: 01.08.2022
 
                     $('#content').html(content);
                 } else {
-                    $('#content').html("<i>sonuç yok</i>");
+                    $('#content').html(t + "<br><i>sonuç yok</i>");
                 }
             });
         }
