@@ -22,17 +22,13 @@ date: 01.08.2022
 
                     content += "<ol>Anlamlar:"
                     for (var i = 0; i < data[0].anlamlarListe.length; i++) {
-                        if (typeof data[0].anlamlarListe[i].ozelliklerListe !== "undefined") {
-                            for (var o = 0; o < data[0].anlamlarListe[i].ozelliklerListe.length; o++) {
-                                content += "<li>(<i>" + data[0].anlamlarListe[i].ozelliklerListe[0].tam_adi + "</i>) " + data[0].anlamlarListe[i].anlam + "</li>";
-                                if (typeof data[0].anlamlarListe[i].orneklerListe !== "undefined") {
-                                    for (var r = 0; r < data[0].anlamlarListe[i].orneklerListe.length; r++) {
-                                        content += "Örnek kullanımlar<br>";
-                                        content += data[0].anlamlarListe[i].orneklerListe[r].ornek;
-                                        if (typeof data[0].anlamlarListe[i].orneklerListe[r].yazar !== "undefined") {
-                                            content += "<br>— " + data[0].anlamlarListe[i].orneklerListe[r].yazar[0].tam_adi;
-                                        }
-                                    }
+                        content += "<li>" + (typeof data[0].anlamlarListe[i].ozelliklerListe !== "undefined" ? "(<i>" + data[0].anlamlarListe[i].ozelliklerListe[0].tam_adi + "</i>) " : " ") + data[0].anlamlarListe[i].anlam + "</li>";
+                        if (typeof data[0].anlamlarListe[i].orneklerListe !== "undefined") {
+                            for (var r = 0; r < data[0].anlamlarListe[i].orneklerListe.length; r++) {
+                                content += "Örnek kullanımlar<br>";
+                                content += data[0].anlamlarListe[i].orneklerListe[r].ornek;
+                                if (typeof data[0].anlamlarListe[i].orneklerListe[r].yazar !== "undefined") {
+                                    content += "<br>— " + data[0].anlamlarListe[i].orneklerListe[r].yazar[0].tam_adi;
                                 }
                             }
                         }
