@@ -49,8 +49,6 @@ Text Domain: blackandwhite
 .dark-mode body, .dark-mode div, .dark-mode main, .dark-mode header, .dark-mode footer, .dark-mode article, .dark-mode p, .dark-mode a, .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6  {
     background-color: #1e1e1e !important;
     color: #ffe9fc !important;
-	-webkit-transition: color 0.2s;
-	transition: color 0.2s;
 }
 
 .dark-mode a:hover {
@@ -73,7 +71,6 @@ Text Domain: blackandwhite
 
 .dark-mode code {
 	background-color: #404040 !important;
-	transition: all .2s;
 }
 
 .dark-mode a code:hover {
@@ -101,6 +98,22 @@ Text Domain: blackandwhite
 	transition: all .2s;
 }
 
+.toggleMode::before {
+	content: 'koyu';
+	background: #404040;
+	color: var(--background);
+	padding: 2px 6px;
+	border-radius: 10px;
+}
+
+.dark-mode .toggleMode::before {
+	content: 'açık';
+	background: var(--background);
+	color: #404040;
+	padding: 2px 6px;
+	border-radius: 10px;
+}
+
 h1,
 h2,
 h3,
@@ -112,11 +125,6 @@ h6 {
 
 b {
 	font-weight: 400;
-}
-
-a {
-	color: #333;
-	transition: all .2s;
 }
 
 a:hover,
@@ -208,7 +216,7 @@ figure {
  */
 
 .main-nav a {
-	color: #000000 !important;
+	color: #000000;
 	padding: 0 0 5px 0 !important;
 	/* margin-right: 30px; */
 	font-weight: 300;
