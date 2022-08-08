@@ -1,10 +1,10 @@
 name: telegram-poster
 
 on:
-  workflow_run:
-    workflows: ["pages-build-deployment"]
-    types:
-      - completed
+  push:
+    paths:
+      - '_posts/'
+    
 
 jobs:
   build:
