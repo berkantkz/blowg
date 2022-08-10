@@ -64,6 +64,10 @@ Text Domain: blackandwhite
 	background: 0 !important;
 }
 
+.dark-mode #kz {
+	filter: invert(1);
+}
+
 .dark-mode ul img {
     background: white;
     border-radius: 50%;
@@ -233,7 +237,7 @@ figure {
 .navbar-toggle {
 	margin: 0;
 	border: 0;
-	padding: 0;
+	padding: 0 5px;
 	list-style: none;
 	/* margin-right: 25px; */
 }
