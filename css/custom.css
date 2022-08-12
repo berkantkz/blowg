@@ -545,10 +545,38 @@ header.entry-header > * {
 	margin: 0;
 	border-top: 1px solid #eee;
 	color: #666;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .copyright p {
 	text-align: center !important;
+}
+
+.copyright ul {
+	list-style-type: none;
+}
+
+.copyright ul li {
+	float: left;
+}
+
+.copyright ul li a {
+	filter: grayscale();
+	transition: all .2s;
+}
+
+.copyright ul li a:hover {
+	filter: none;
+}
+
+.copyright .svg {
+	width: 16px;
+}
+
+.copyright .svg:hover {
+	width: 16px;
 }
 
 /**
