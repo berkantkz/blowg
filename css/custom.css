@@ -131,6 +131,10 @@ b {
 	font-weight: 400;
 }
 
+a {
+	color: var(--accent);
+}
+
 a:hover,
 a:focus {
 	text-decoration: none;
