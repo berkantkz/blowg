@@ -9,6 +9,17 @@ layout: index
 </header>
 {% endif %}
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2951689275458403"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-gw-3+1f-3d+2z"
+     data-ad-client="ca-pub-2951689275458403"
+     data-ad-slot="9781640845"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 {% for post in site.posts %}
 <article class="post">
     <header class="entry-header">
