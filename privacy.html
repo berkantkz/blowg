@@ -1,40 +1,39 @@
 <html>
+
 <head>
-	<title></title>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117578942-3"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+    <title></title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117578942-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-	  gtag('config', 'UA-117578942-3');
-	</script>
+        gtag('config', 'UA-117578942-3');
+    </script>
 </head>
+
 <body>
-<p id=info></p>
+    <p id=info style="padding-left: 10%; padding-right: 10%; margin-top: 5%; text-align: justify;"></p>
 
-  <script>
-    (function(){
-		const urlParams = new URLSearchParams(window.location.search);
-		var app = urlParams.getAll('app');
-		
-		if (app == "") return document.getElementById('info').innerHTML = "null";
-	    	var text = "Thank you for choosing to use app, " + app + "! We are committed to protecting your privacy and ensuring that your personal information is safe."\
+    <script>
+        (function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            var app = urlParams.getAll('app');
 
-		"We do not collect any data from you or your device. Our app does not use cookies or any other tracking technologies, and we do not ask for any personal information from you."\
+            if (app == "") return document.getElementById('info').innerHTML = "null";
+            var text = "<span style='font-size: 18px;'>Thank you for choosing to use our app, " + app + "! We are committed to protecting your privacy and ensuring that your personal information is safe.\
+		<br><br>We do not collect any data from you or your device. Our app does not use cookies or any other tracking technologies, and we do not ask for any personal information from you.\
+		<br><br>We display ads within our app, but these ads are provided by Google and are subject to Google's privacy policies. We do not have any control over these ads or how they collect and use your information. Please review Google's privacy policy for more information.\
+        <br><br>We are committed to protecting your privacy and we will never sell or share your personal information with third parties without your consent.\
+		<br><br>If you have any questions or concerns about our privacy policy, please do not hesitate to contact us.\
+		<br><br>Thank you for using our app.</span>";
 
-		"We display ads within our app, but these ads are provided by Google and are subject to Google's privacy policies. We do not have any control over these ads or how they collect and use your information. Please review Google's privacy policy for more information."\
+            document.getElementById('info').innerHTML = text;
+            document.title = app + " Privacy Policy | berkantkz";
+        })();
+    </script>
 
-	    	"We are committed to protecting your privacy and we will never sell or share your personal information with third parties without your consent."\
+    <body>
 
-		"If you have any questions or concerns about our privacy policy, please do not hesitate to contact us."\
-
-		"Thank you for using our app.";
-		
-		document.getElementById('info').innerHTML = app + text;
-		document.title = app + " Privacy Policy | berkantkz";
-    })();
-  </script>
-<body>
 </html>
