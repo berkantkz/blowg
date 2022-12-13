@@ -20,8 +20,19 @@
 		var app = urlParams.getAll('app');
 		
 		if (app == "") return document.getElementById('info').innerHTML = "null";
+	    	var text = "Thank you for choosing to use app, " + app + "! We are committed to protecting your privacy and ensuring that your personal information is safe."\
+
+		"We do not collect any data from you or your device. Our app does not use cookies or any other tracking technologies, and we do not ask for any personal information from you."\
+
+		"We display ads within our app, but these ads are provided by Google and are subject to Google's privacy policies. We do not have any control over these ads or how they collect and use your information. Please review Google's privacy policy for more information."\
+
+	    	"We are committed to protecting your privacy and we will never sell or share your personal information with third parties without your consent."\
+
+		"If you have any questions or concerns about our privacy policy, please do not hesitate to contact us."\
+
+		"Thank you for using our app."
 		
-		document.getElementById('info').innerHTML = app + " does not require any information specified by you or collect any information related to your usage or device information. You agree to accept being informed and that you know all these by using this app.";
+		document.getElementById('info').innerHTML = app + text;
 		document.title = app + " Privacy Policy | berkantkz";
     })();
   </script>
