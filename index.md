@@ -25,7 +25,7 @@ layout: index
     <header class="entry-header">
         <div>
             <h1 class="entry-title">
-                <a href="{{ post.url }}" data="{{ post.language }}">{{ post.title }}</a>
+                <a href="/blowg/{{ post.url }}" data="{{ post.language }}">{{ post.title }}</a>
             </h1>
             <div class="entry-meta">
                 <span class="post-date"><time class="entry-date"
